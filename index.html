@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+<!--    <link rel="stylesheet" href="css/bootstrap.min.css">-->
     <link rel="stylesheet" href="css/bootstrap-super-hero.css">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/clock.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -38,11 +43,114 @@
         <h1 class="logo logo-top" style="display: inline">std:</h1>
         <h1 class="logo logo-point" style="display: inline" id="changed-color-point">:</h1>
     </div>
+    
+    <div class="hidden-xs hidden-sm">
+        <div id="clock"></div>
+        <div id="countdown"></div>
+    </div>
+    
     <div class="circle" id="changed-color-bg">
         <h1 class="dark-text logo logo-bottom">hackathon</h1>
     </div>
     
+    <div class="container">
+        <div class="row block">
+            <div class="col-md-12">
+                <h3 style='text-align: center;'>Перший в Івано-Франківську захід такого типу, основна мета якого - розробка веб- та мобільних сервісів для студентів</h3>
+            </div>
+        </div>
+    </div>
+    
+    <div class="light-block">
+        <div class="container">
+            <div class="row block">
+                <div class="col-md-3">
+                    <h1 style='text-align: center;' class="dark-text">
+                        <i class="fas fa-clock fa-2x" style="display: block"></i>
+                        33 години
+                    </h1>
+                </div>
+                <div class="col-md-3 dark-text" >
+                    <h1 style='text-align: center;' class="dark-text">
+                        <i class="fas fa-male fa-2x" style="display: block"></i>
+                        50 учасників
+                    </h1>
+                </div>
+                <div class="col-md-3 dark-text">
+                    <h1 style='text-align: center;' class="dark-text">
+                        <i class="fas fa-users fa-2x" style="display: block"></i>
+                        10 команд
+                    </h1>
+                </div>
+                <div class="col-md-3 dark-text">
+                    <h1 style='text-align: center;' class="dark-text">
+                        <i class="fas fa-gem fa-2x" style="display: block"></i>
+                        10 менторів
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row block">
+            <div class="col-md-12">
+                <h3 style='text-align: center;'>За 33 години 50 студентів об'єднаних в 10 команд повинні представити ідею, розробити робочий прототип та продумати бізнес-модель сервісів, призначених для полегшення життя студента або покращеного способу комунікації з керівництвом Університету</h3>
+            </div>
+        </div>
+    </div>
+    
+    <div class="light-block">
+        <div class="container">
+            <div class="row block">
+               <div class="col-md-12">
+                   <h1 class='dark-text'>Ментори</h1>
+               </div>
+                <div class="col-md-3">
+                    <img src="img/mentor.jpeg" width="100%" alt="">
+                    <h3 class='dark-text'>Bohdan Korzhak</h3>
+                </div>
+                <div class="col-md-3">
+                    <img src="img/mentor.jpeg" width="100%" alt="">
+                    <h3 class='dark-text'>Bohdan Korzhak</h3>
+                </div>
+                <div class="col-md-3">
+                    <img src="img/mentor.jpeg" width="100%" alt="">
+                    <h3 class='dark-text'>Bohdan Korzhak</h3>
+                </div>
+                <div class="col-md-3">
+                    <img src="img/mentor.jpeg" width="100%" alt="">
+                    <h3 class='dark-text'>Bohdan Korzhak</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row block">
+            <div class="col-md-12">
+               <div class="col-md-12">
+                   <h1>Спонсори</h1>
+               </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row block">
+            <div class="col-md-12">
+               <div class="col-md-12">
+                   <h1>футер</h1>
+               </div>
+                
+            </div>
+        </div>
+    </div>
+    
     <script src="js/jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+    <script src="js/clock.js"></script>
     <script src="js/custom.js"></script>
 </body>
 </html>
