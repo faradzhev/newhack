@@ -5,4 +5,4 @@ function next_cl() {
  document.getElementById("changed-color-point").style.color='#'+dt[i++];
  if (i>=dt.length) i=0;
 }
-setInterval(next_cl,3000);
+setInterval(next_cl,5000);
