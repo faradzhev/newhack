@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Geometria"; 
+    src: url("fonts/GEOMETRIA-HEAVY.TTF") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+.logo {
+    font-family: "Geometria";
+}
+.logo-point {
+    font-size: 9.5rem;
+}
+.logo-top {
+    font-size: 9.5rem;
+    margin-left: 40px;
+}
+.logo-bottom {
+    font-size: 5.5rem;
+    margin-left: 40px;
+}
+
+.dark-text {
+    color: #3b3f40;
+}
+.light-text {
+    color: #babcbe;
+}
+
+#changed-color-bg {
+    transition: background-color 1s;
+    padding-bottom: 110px;
+}
+
+#changed-color-point {
+    transition: color 2s;
+}
