@@ -8,7 +8,11 @@ html, body {
     src: url("fonts/GEOMETRIA-HEAVY.TTF") format("truetype"); 
     font-style: normal; 
     font-weight: normal; 
-} 
+}
+
+h2, h3, h4 {
+    font-family: Geometria;
+}
 
 .logo-top-block {
     position: relative;
@@ -46,8 +50,9 @@ html, body {
 }
 
 .button-center {
+    font-family: Geometria;
     position: absolute;
-    width: 250px;
+    width: 300px;
     height: 60px;
     top: 0;
     bottom: 0;
