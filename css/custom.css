@@ -64,6 +64,7 @@ html, body {
 .button-center:hover{
     background: #babcbe;
     color: #3b3f40;
+    text-decoration: none;
 }
 
 .dark-text {
