@@ -56,36 +56,39 @@
         </div>
     </div>
     
-    <div class="light-block">
-        <div class="container">
-            <div class="row block">
-                <div class="col-md-3">
-                    <h1 style='text-align: center;' class="dark-text">
-                        <i class="fas fa-clock fa-2x" style="display: block"></i>
-                        33 години
-                    </h1>
-                </div>
-                <div class="col-md-3 dark-text" >
-                    <h1 style='text-align: center;' class="dark-text">
-                        <i class="fas fa-male fa-2x" style="display: block"></i>
-                        50 учасників
-                    </h1>
-                </div>
-                <div class="col-md-3 dark-text">
-                    <h1 style='text-align: center;' class="dark-text">
-                        <i class="fas fa-users fa-2x" style="display: block"></i>
-                        10 команд
-                    </h1>
-                </div>
-                <div class="col-md-3 dark-text">
-                    <h1 style='text-align: center;' class="dark-text">
-                        <i class="fas fa-gem fa-2x" style="display: block"></i>
-                        10 менторів
-                    </h1>
+    <section class="section" id="counts">
+        <div class="light-block">
+            <div class="container">
+                <div class="row block">
+                    <div class="col-md-3">
+                        <h1 style='text-align: center;' class="dark-text">
+                            <i class="fas fa-clock fa-2x" style="display: block"></i>
+                            <span class="spin-hour"></span> години
+                        </h1>
+                    </div>
+                    <div class="col-md-3 dark-text" >
+                        <h1 style='text-align: center;' class="dark-text">
+                            <i class="fas fa-male fa-2x" style="display: block"></i>
+                            <span class="spin-users"></span> учасників
+                        </h1>
+                    </div>
+                    <div class="col-md-3 dark-text">
+                        <h1 style='text-align: center;' class="dark-text">
+                            <i class="fas fa-users fa-2x" style="display: block"></i>
+                            <span class="spin-team"></span> команд
+                        </h1>
+                    </div>
+                    <div class="col-md-3 dark-text">
+                        <h1 style='text-align: center;' class="dark-text">
+                            <i class="fas fa-gem fa-2x" style="display: block"></i>
+                            <span class="spin-mentors"></span> менторів
+                        </h1>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    
     
     <div class="container">
         <div class="row block">
@@ -97,9 +100,10 @@
     
     <div class="light-block">
         <div class="container">
-            <div class="row block">
+            <div class="row" style="padding-bottom: 80px">
                <div class="col-md-12">
-                   <h1 class='dark-text'>Ментори</h1>
+                   <h1 class='dark-text' style="text-align: center;margin-top: 80px;">Ментори</h1>
+                   <p style="text-align: center; margin-bottom: 40px" class="dark-text">10 професіоналів своєї справи будуть давати поради як краще втілити Вашу ідею в життя та представити її широкому загалу</p>
                </div>
                 <div class="col-md-3">
                     <img src="img/mentor.jpeg" width="100%" alt="">
@@ -145,9 +149,11 @@
     
     
     <script src="js/jquery.min.js" ></script>
+    <script src="js/jquery.spincrement.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/countup.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
         $("#menu").on("click","a", function (event) {
