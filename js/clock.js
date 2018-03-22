@@ -1,6 +1,7 @@
 // get next Sunday
-var nextSunday = moment().day(7).format("YYYY-MM-DDT11:00:00Z");
+//var nextSunday = moment().day(7).format("YYYY-MM-DDT11:00:00Z");
 
+var nextSunday = "2018-04-27T10:00:00+02:00"
 // make it a moment object again
 var event = moment(nextSunday);
 
