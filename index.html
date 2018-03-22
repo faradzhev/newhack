@@ -15,9 +15,15 @@
 
     
     <div class='logo-top-block'>  
-        <div style="position: absolute; bottom: -5%;">
+        <div style="position: absolute; bottom: -5%; width: 100%">
             <h1 class="logo logo-top" style="display: inline">std:</h1>
             <h1 class="logo logo-point" style="display: inline" id="changed-color-point">:</h1>
+            
+            <div class="hidden-xs hidden-sm">
+                <b>до старту залишилось</b>
+                <div id="clock"></div>
+                <div id="countdown"></div>
+            </div>
         </div>  
 
     </div>
@@ -26,15 +32,12 @@
         <div class="circle" id="changed-color-bg">
             <h1 class="dark-text logo logo-bottom">hackathon</h1>
         </div>
-        <a href="#desc">
-            <img src="img/arrow.png" class="arrow" alt="">
-        </a>
-<!--
-        <div class="hidden-xs hidden-sm">
-            <div id="clock"></div>
-            <div id="countdown"></div>
-        </div>
--->
+        
+        <div id="menu">
+            <a href="#desc">
+                <img src="img/arrow.png" class="arrow" alt="">
+            </a>
+        </div>        
     </div>
     
     <div class="container" id='desc'>
@@ -132,19 +135,20 @@
         </div>
     </div>
     
-    <script>
-        var $page = $('html, body');
-        $('a[href*="#"]').click(function() {
-            $page.animate({
-                scrollTop: $($.attr(this, 'href')).offset().top
-            }, 400);
-            return false;
-        });
-    </script>
     
     <script src="js/jquery.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/custom.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#menu").on("click","a", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 1500);
+        });
+      });
+    </script>
 </body>
 </html>
