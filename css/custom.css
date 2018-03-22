@@ -45,6 +45,27 @@ html, body {
     margin: auto
 }
 
+.button-center {
+    position: absolute;
+    width: 250px;
+    height: 60px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    background: #3b3f40;
+    color: #babcbe;
+    transition: 0.5s;
+}
+
+.button-center:hover{
+    background: #babcbe;
+    color: #3b3f40;
+}
+
 .dark-text {
     color: #3b3f40;
 }

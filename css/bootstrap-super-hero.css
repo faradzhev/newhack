@@ -27,7 +27,7 @@
   --gray: #868e96;
   --gray-dark: #343a40;
   --primary: #DF691A;
-  --secondary: #4E5D6C;
+  --secondary: #4E5D6C4E5D6C;
   --success: #5cb85c;
   --info: #5bc0de;
   --warning: #f0ad4e;
@@ -2559,14 +2559,14 @@ fieldset:disabled a.btn {
 
 .btn-secondary {
   color: #fff;
-  background-color: #6727ca;
-  border-color: #5637e0;
+  background-color: #4E5D6C;
+  border-color: #4E5D6C;
 }
 
 .btn-secondary:hover {
   color: #fff;
-  background-color: #5f2ada;
-  border-color: #7f22d8;
+  background-color: #39444e;
+  border-color: #333d47;
 }
 
 .btn-secondary:focus, .btn-secondary.focus {
