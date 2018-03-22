@@ -40,7 +40,7 @@
            
         <a href="register.html" class="button-center"><h3>Зареєструватись</h3></a>
         
-        <div id="menu">
+        <div id="arrow-down">
             <a href="#desc">
                 <img src="img/arrow.png" class="arrow" alt="">
             </a>
@@ -50,7 +50,7 @@
     <div class="light-block">
         <div class="container">
             <div class="row">
-                <nav class="navbar navbar-expand-lg navbar-light ">
+                <nav class="navbar navbar-expand-lg navbar-light " id='menu'>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation" style="">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -61,14 +61,21 @@
                         <a class="nav-link navbar-brand" href="#">головна <span class="sr-only">(current)</span></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link navbar-brand" href="#">про хакатон</a>
+                        <a class="nav-link navbar-brand" href="register.html">реєстрація</a>
                       </li>
+                       <li class="nav-item">
+                        <a class="nav-link navbar-brand" href="#counts">про хакатон</a>
+                      </li>
+<!--
                       <li class="nav-item">
-                        <a class="nav-link navbar-brand" href="#">ментори</a>
+                        <a class="nav-link navbar-brand" href="#mentors">ментори</a>
                       </li>
+-->
+<!--
                       <li class="nav-item">
                         <a class="nav-link navbar-brand" href="#">контакти</a>
                       </li>
+-->
                     </ul>
                  
                   </div>
@@ -133,7 +140,8 @@
     
     <div class="light-block">
         <div class="container">
-            <div class="row" style="padding-bottom: 80px">
+            <div id="mentors" class="row" style="padding-bottom: 80px">
+<!--
                <div class="col-md-12">
                    <h1 class='dark-text' style="text-align: center;margin-top: 80px; font-family: Geometria;">Ментори</h1>
                    <p style="text-align: center; margin-bottom: 40px" class="dark-text">10 професіоналів своєї справи будуть давати поради як краще втілити Вашу ідею в життя та представити її широкому загалу</p>
@@ -154,6 +162,7 @@
                     <img src="img/superMentor.jpg" width="100%" alt="">
                     <h3 class='dark-text'>Пункт Прийому Міді по 140</h3>
                 </div>
+-->
             </div>
         </div>
     </div>
@@ -161,10 +170,18 @@
     <div class="container">
         <div class="row ">
             <div class="col-md-12">
-               <div class="col-md-12">
-                   <h1>&nbsp;</h1>
-               </div>
-                
+                <h1 class='light-text' style="text-align: center;margin-top: 80px; font-family: Geometria;">Організатори</h1>
+                <center>
+                    <a href="http://pu.if.ua/uk/">
+                        <img src="img/organizer/Logo_Nove_pnu_bez_korony.png" class="organizer" alt="">
+                    </a>
+                    <a href="http://freakspace.xyz">
+                        <img src="img/organizer/stickers-1-1.png" class="organizer" alt="">
+                    </a>
+                    <a href="https://paragraph.if.ua">
+                        <img src="img/organizer/paragraph_logo_square.png" class="organizer" alt="">
+                    </a>
+                </center>               
             </div>
         </div>
     </div>
@@ -175,9 +192,22 @@
                 <div class="col-md-12">
                    <div class="col-md-12">
                        <h1 class='dark-text' style="text-align: center;margin-top: 80px; font-family: Geometria;">За підтримки</h1>
+                       <center>
+                            <a href="http://pu.if.ua/uk/">
+                              <img src="img/organizer/Logo_Nove_pnu_bez_korony.png" class="partner" alt="">
+                            </a>
+                            <a href="https://beegreen.com.ua">
+                               <img src="img/partners/beegreen.png" class="partner" alt="">
+                            </a>
+                            <a href="">
+                              <img src="img/partners/horizon2020.png" class="partner" alt="">
+                            </a>
+                       </center>
+<!--
                        <img src="img/partners/eleks.png" class="partner" alt="">
                        <img src="img/partners/it-cl.png" class="partner" alt="">
                        <img src="img/partners/Softserve.png" class="partner" alt="">
+-->
                    </div>
 
                 </div>
@@ -185,18 +215,17 @@
         </div>
     </div>
     
-<!--
     <div class="container">
         <div class="row block">
             <div class="col-md-12">
-               <div class="col-md-12">
-                   <h1>футер</h1>
-               </div>
-                
+                <h3>Контакти:</h3>
+                <h4>hack@pnu.life</h4>
+                <hr>
+                <h5 style="font-family: Geometria">Сайт перебуває в розробці і постійному доповненні</h5>
+                <h1 style="font-family: Geometria">std::hackathon</h1> 
             </div>
         </div>
     </div>
--->
     
     
     <script src="js/jquery.min.js" ></script>
@@ -207,6 +236,12 @@
     <script src="js/countup.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
+        $("#arrow-down").on("click","a", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 1500);
+        });
         $("#menu").on("click","a", function (event) {
             event.preventDefault();
             var id  = $(this).attr('href'),

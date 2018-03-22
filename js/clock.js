@@ -1,30 +1,21 @@
-// get next Sunday
-//var nextSunday = moment().day(7).format("YYYY-MM-DDT11:00:00Z");
-
-var nextSunday = "2018-04-27T10:00:00+02:00"
-// make it a moment object again
-var event = moment(nextSunday);
-
-// get current time/date
-var current = moment();
-
-// get difference between event and current
-var diffTime = event.diff(current);
-
-// let moment.js make the duration out of the timestamp
-var duration = moment.duration(diffTime, 'milliseconds', true);
-
-// set interval to milliseconds
-var interval = 1000;
-
-
 setInterval(function(){
-  duration = moment.duration(duration - interval, 'milliseconds');
-  $('#clock').html(
-      "<div class=\'days cell\' style=\'color: #3b3f40;\'>"+duration.days()+"<span style=\'color: #babcbe;\'>дні</span></div>" +
-      "<div class=\'hours cell\' style=\'color: #3b3f40;\'>"+duration.hours()+"<span style=\'color: #babcbe;\'>год</span></div>" +
-      "<div class=\'mins cell\' style=\'color: #3b3f40;\'>"+duration.minutes()+"<span style=\'color: #babcbe;\'>хв</span></div>" +
-      "<div class=\'secs cell\' style=\'color: #3b3f40;\'>"+duration.seconds()+"<span style=\'color: #babcbe;\'>сек</span></div>")
-}, interval);
+    var endDate  = new Date(2018, 3, 27, 10, 00, 0, 0);
+    var endDate  = endDate.getTime();
+    var currentDate = Date.now();
+    var sec      = (endDate - currentDate) / 1000;
+    var min       = sec / 60;
+    var hou    = min / 60;
+
+    var days    = Math.floor(hou / 24);
+    var hours   = Math.floor(hou % 24);
+    var minutes = Math.floor(min % 60);
+    var seconds = Math.floor(sec % 60);
+
+    $('#clock').html(
+      "<div class=\'days cell\' style=\'color: #3b3f40;\'>"+days+"<span style=\'color: #babcbe;\'>дні</span></div>" +
+      "<div class=\'hours cell\' style=\'color: #3b3f40;\'>"+hours+"<span style=\'color: #babcbe;\'>год</span></div>" +
+      "<div class=\'mins cell\' style=\'color: #3b3f40;\'>"+minutes+"<span style=\'color: #babcbe;\'>хв</span></div>" +
+      "<div class=\'secs cell\' style=\'color: #3b3f40;\'>"+seconds+"<span style=\'color: #babcbe;\'>сек</span></div>")
+}, 1000);
 
 
