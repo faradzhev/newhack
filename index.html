@@ -26,6 +26,9 @@
         <div class="circle" id="changed-color-bg">
             <h1 class="dark-text logo logo-bottom">hackathon</h1>
         </div>
+        <a href="#desc">
+            <img src="img/arrow.png" class="arrow" alt="">
+        </a>
 <!--
         <div class="hidden-xs hidden-sm">
             <div id="clock"></div>
@@ -34,7 +37,7 @@
 -->
     </div>
     
-    <div class="container">
+    <div class="container" id='desc'>
         <div class="row block">
             <div class="col-md-12">
                 <h3 style='text-align: center;'>Перший в Івано-Франківську захід такого типу, основна мета якого - розробка веб- та мобільних сервісів для студентів</h3>
@@ -128,6 +131,16 @@
             </div>
         </div>
     </div>
+    
+    <script>
+        var $page = $('html, body');
+        $('a[href*="#"]').click(function() {
+            $page.animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 400);
+            return false;
+        });
+    </script>
     
     <script src="js/jquery.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>

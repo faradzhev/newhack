@@ -35,6 +35,16 @@ html, body {
     margin-left: 40px;
 }
 
+.arrow {
+    position: absolute;
+    width: 80px;
+    top: 0;
+    bottom: -60%;
+    left: 0;
+    right: 0;
+    margin: auto
+}
+
 .dark-text {
     color: #3b3f40;
 }
