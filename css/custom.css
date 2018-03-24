@@ -110,3 +110,11 @@ li {
     height: 100px;
     margin: 10px 20px 60px 20px;
 }
+.sticky-menu {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    box-shadow: 0 5px 16px rgba(150,150,150,0.5);
+}
+
