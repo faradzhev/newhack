@@ -2,6 +2,8 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+
+    /* overflow-x: hidden; */
 }
 @font-face {
     font-family: "Geometria";
@@ -96,9 +98,32 @@ li {
 .block {
     padding: 200px 0;
 }
+.small-block {
+  padding: 100px 0;
+}
 
 .light-block {
     background: #babcbe;
+}
+
+.orange-block {
+  background: #d76443;
+}
+
+.light-blue-block {
+  background: #8cc6bb;
+}
+
+.blue-block {
+  background: #49a3bf;
+}
+
+.green-block {
+  background: #7ebb76;
+}
+
+.fiolet-block {
+  background: #6558a0;
 }
 
 .partner {
@@ -117,4 +142,3 @@ li {
     width: 100%;
     box-shadow: 0 5px 16px rgba(150,150,150,0.5);
 }
-
