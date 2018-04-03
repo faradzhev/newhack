@@ -21,6 +21,10 @@ li {
     font-size: 40px;
 }
 
+.small-block>.container>ul>li {
+    font-size: 22px;
+}
+
 .logo-top-block {
     position: relative;
     height: 30%;
