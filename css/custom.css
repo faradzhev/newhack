@@ -111,11 +111,23 @@ li {
 	text-align: center;
 }
 
+#counts h1, #counts h2, #counts h3 {
+	text-align: center;
+}
+#counts i {
+	display: block;
+}
+
 .block {
     padding: 200px 0;
 }
 .small-block {
 	padding: 100px 0;/*100px 0;*/
+}
+
+.block-title {
+	text-align: center;
+	margin-top: 80px;
 }
 
 .light-block {
@@ -153,10 +165,20 @@ li {
 	height: 80px;
 }
 
-.organizer {
+/*.organizer {
     height: 100px;
     margin: 10px 20px 60px 20px;
+}*/
+#organizers a {
+	//width: 100px;
+	//height: 100px;
+    //margin: 10px 20px 60px 20px;
 }
+#organizers img {
+	height: 100px;
+	margin: 10px 20px 60px 20px;
+}
+
 .sticky-menu {
     position: fixed;
     top: 0;
