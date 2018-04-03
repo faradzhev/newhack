@@ -78,7 +78,9 @@ li {
     color: #3b3f40;
     text-decoration: none;
 }
-
+.black-text {
+    color: #262626;
+}
 .dark-text {
     color: #3b3f40;
 }
