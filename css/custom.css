@@ -19,7 +19,8 @@ h2, h3, h4, li {
 
 li {
     color: #3b3f40;
-    font-size: 40px;
+    font-size: 20px;
+	margin: 10px 0;
 }
 
 .small-block>.container>ul>li {
