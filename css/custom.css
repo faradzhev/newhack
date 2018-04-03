@@ -13,7 +13,7 @@ html, body {
     font-weight: normal;
 }
 
-h2, h3, h4, li {
+h1, h2, h3, h4, h5, h6, p, li {
     font-family: Geometria;
 }
 
@@ -38,6 +38,7 @@ li {
 
 
 .logo {
+    font-size: 5.5rem;
     font-family: "Geometria";
 }
 .logo-point {
@@ -48,7 +49,6 @@ li {
     margin-left: 40px;
 }
 .logo-bottom {
-    font-size: 5.5rem;
     margin-left: 40px;
 }
 
@@ -103,11 +103,19 @@ li {
     transition: color 2s;
 }
 
+#desc h1, #desc h2, #desc h3 {
+	text-align: center;
+}
+
+#info h2, #info h4 {
+	text-align: center;
+}
+
 .block {
     padding: 200px 0;
 }
 .small-block {
-  padding: 100px 0;
+	padding: 100px 0;/*100px 0;*/
 }
 
 .light-block {
@@ -130,13 +138,19 @@ li {
   background: #7ebb76;
 }
 
-.fiolet-block {
+.violet-block {
   background: #6558a0;
 }
 
-.partner {
+/*.partner {
     height: 80px;
     margin-right: 30px;
+}*/
+#partners a {
+    margin: 0 15px;
+}
+#partners img {
+	height: 80px;
 }
 
 .organizer {
